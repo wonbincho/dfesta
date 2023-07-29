@@ -43,6 +43,8 @@ body {
   position: relative;
   background-color: #f8f9fb;
   -webkit-text-size-adjust: none;
+  background: #fff;
+  font-family: "SUIT", "Bebas Neue Pro", "Malgun Gothic", "맑은 고딕", dotum, "돋움", "Apple SD Gothic Neo", sans-serif;
 }
 
 img,
@@ -61,6 +63,7 @@ address {
 }
 
 a {
+  color: #000;
   text-decoration: none;
 }
 
@@ -70,6 +73,11 @@ table {
 
 mark {
   background: transparent;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 html,
@@ -91,4 +99,20 @@ img {
   height: 1px;
   margin: -1px;
   clip: rect(0 0 0 0);
+}
+
+@font-face {
+  font-family: 'Bebas Neue Pro';
+  font-weight: normal;
+  src: url('@/assets/fonts/BebasNeueProRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Bebas Neue Pro';
+  font-weight: bold;
+  src: url('@/assets/fonts/BebasNeueProBold.woff') format('woff');
+}
+
+[data-font-en] {
+  font-family: "Bebas Neue Pro", "Malgun Gothic", "맑은 고딕", dotum, "돋움", "Apple SD Gothic Neo", sans-serif;
 }

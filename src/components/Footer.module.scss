@@ -1,0 +1,59 @@
+.footer {
+  overflow: hidden;
+  margin-top: 120px;
+  padding: 20px 0 60px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: 'Bebas Neue Pro';
+
+  .layout_inner {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .introduce {
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        &:nth-child(2) {
+          margin-left: 37px;
+        }
+
+        a {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 24px;
+          letter-spacing: 0.102em;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .partnership {
+    width: 780px;
+    height: 19px;
+    margin: 50px auto 0 auto;
+    background: url('@/assets/img/img_footer_partnership.jpg') no-repeat 0 0;
+    background-size: 100%;
+
+    @at-root #app.now & {
+      background: url('@/assets/img/img_footer_partnership_white.png') no-repeat 0 0;
+    }
+  }
+
+  .copy {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+}
