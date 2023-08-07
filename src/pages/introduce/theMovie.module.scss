@@ -1,0 +1,102 @@
+.the_movie {
+    width: 100%;
+    background-color: rgb(203, 61, 68);
+
+    .section_01 {
+        position: relative;
+
+        .arrow_icon {
+            z-index: 2;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            width: 31px;
+            height: 17px;
+            background-image: url('/static/img/ico_arrow.svg');
+            background-size: contain;
+        }
+
+        .logo_img {
+            z-index: 2;
+            position: absolute;
+            width: 140px;
+            height: 48px;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url('/static/img/logo.svg');
+            background-size: contain;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            content: "";
+            background: rgba(0, 0, 0, .2);
+        }
+
+        .menu_title {
+            z-index: 2;
+            position: absolute;
+            top: 50vh;
+            left: 30px;
+            rotate: 180deg;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: translateY(50%);
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: .5em;
+        }
+
+        .menu_btn {
+            z-index: 1001;
+            position: absolute;
+            top: 50vh;
+            right: 16px;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            transform: translate(0, -50%);
+
+            .line {
+                display: block;
+                width: 22px;
+                height: 2px;
+                background: #fff;
+                margin-left: 15px;
+                transition: all 0.3s ease;
+
+                &+.line {
+                    margin-top: 7px;
+                }
+
+                &:nth-child(2) {
+                    width: 16px;
+                }
+            }
+        }
+
+        .main_img {
+            height: 100vh;
+
+            .thumb {
+                position: relative;
+                height: 100vh;
+                overflow: hidden;
+
+                .img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
