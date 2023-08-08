@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './index.module.scss';
 import LinkButton from '@/components/LinkButton';
+import Menu from '@/components/Menu';
 import Footer from '@/components/Footer';
 
 const cx = classNames.bind(styles);
@@ -9,12 +10,13 @@ const cx = classNames.bind(styles);
 const Introduce: React.FC = () => {
   return (
     <div className={cx('introduce')}>
+      <Menu />
       <button className={cx('btn_top')} />
       <div className={cx('section_01')}>
         <div className={cx('arrow_icon')} />
         <div className={cx('logo_img')} />
         <div className={cx('menu_title')}>
-          <strong>INTRODUC</strong>
+          <strong>INTRODUCE</strong>
         </div>
         <button className={cx('menu_btn')}>
           <span className={cx('line')} />
@@ -85,7 +87,7 @@ const Introduce: React.FC = () => {
                 <img className={cx('img')} src="/static/img/logo_limited_edition.svg" />
               </div>
               <div className={cx('thumb_2')}>
-                <img className={cx('img')} src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iNSIgZmlsbD0iIzAwNDRDOCIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIxNi43NSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iNC43NSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPC9zdmc+Cg==" />
+                <img className={cx('img')} src="/static/img/img_limited_emblem.svg" />
               </div>
             </div>
             <div className={cx('more_btn_area')}>
@@ -130,7 +132,7 @@ const Introduce: React.FC = () => {
           <div className={cx('title_wrap')}>
             <strong className={cx('title')}>NOW ARRIVAL</strong>
             <div className={cx('thumb')}>
-              <img className={cx('img')} src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAyMiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuOTkyMTg4IDEzLjk5MjJIMjEuMDA3OFYxNi4wMDc4SDAuOTkyMTg4VjEzLjk5MjJaTTE3IDExLjkwNjJDMTcuMzkwNiAxMi4wNDY5IDE3Ljc3MzQgMTIuMDIzNCAxOC4xNDg0IDExLjgzNTlDMTguNTIzNCAxMS42NDg0IDE4Ljc4MTIgMTEuMzU5NCAxOC45MjE5IDEwLjk2ODhDMTkuMDYyNSAxMC41NzgxIDE5LjAzOTEgMTAuMTk1MyAxOC44NTE2IDkuODIwMzFDMTguNjY0MSA5LjQ0NTMxIDE4LjM3NSA5LjE4NzUgMTcuOTg0NCA5LjA0Njg4TDEzLjM5MDYgNy40Mjk2OUwxMC43MTg4IDAuNDQ1MzEyTDguNTYyNSAwTDkuMDc4MTIgNS44ODI4MUw2LjAzMTI1IDQuODA0NjlMNS40OTIxOSAxLjI4OTA2TDMuOTkyMTkgMS4wMDc4MUwzLjAwNzgxIDcuMDA3ODFMMTcgMTEuOTA2MloiIGZpbGw9IiMxNTE1MTUiLz4KPC9zdmc+Cg==" />
+              <img className={cx('img')} src="/static/img/ico_plane.svg" />
             </div>
           </div>
           <div className={cx('img_wrap')}>
